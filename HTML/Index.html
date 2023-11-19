@@ -2,22 +2,264 @@
 <html lang='de'>
 <head>
   <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/public/style.css">
   <title>Credit Swiss</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        header a {
+            transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+            padding: 10px;
+            border-radius: 8px;
+
+        }
+
+        header a:hover {
+            background-color: #4a5568;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+        }
+
+        nav ul li:hover a {
+            background-color: #4a5568;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #4c51bf;
+            padding: 10px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #4c51bf;
+            padding: 10px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        footer a {
+            transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        footer a:hover {
+            background-color: #4a5568;
+        }
+
+        footer ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 
-<body>
+<body class="h-auto w-auto flex justify-around flex-col flex-wrap m-0 min-h-full">
 
-<header>
-  <nav></nav>
+<header class="bg-indigo-400 p-2">
+    <a class="m-10" href="#">
+        <img src="/img/home.png" height="auto" width="100" alt="home-button">
+    </a>
+    <nav class="flex items-center space-x-4">
+        <ul class="list-none">
+            <li><a>Kontakt</a></li>
+            <li><a>Credits</a></li>
+            <li><a>Was auch immer</a></li>
+        </ul>
+    </nav>
 </header>
 
-<main>
-  <article>
-    <section></section>
-  </article>
-</main>
+<div class="max-w-7xl mx-auto w-full grid grid-cols-9 m-20">
+    <!--Nummer 1-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">1</div>
+    </div>
 
-<footer>
+    <div class="col-span-4 w-full h-full"></div>
+
+    <!--Nummer 2-->
+    <div class="col-span-4 w-full h-full"></div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">2</div>
+    </div>
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!--Nummer 3-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">3</div>
+    </div>
+
+    <div class="col-span-4 w-full h-full"></div>
+
+    <!--Nummer 4-->
+    <div class="col-span-4 w-full h-full"></div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">4</div>
+    </div>
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!--Nummer 5-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">5</div>
+    </div>
+
+    <div class="col-span-4 w-full h-full"></div>
+
+    <!--Nummer 6-->
+    <div class="col-span-4 w-full h-full"></div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">6</div>
+    </div>
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!--Nummer 7-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">7</div>
+    </div>
+
+    <div class="col-span-4 w-full h-full"></div>
+
+    <!--Nummer 8-->
+    <div class="col-span-4 w-full h-full"></div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">8</div>
+    </div>
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!--Nummer 9-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">9</div>
+    </div>
+
+    <div class="col-span-4 w-full h-full"></div>
+
+    <!--Nummer 10-->
+    <div class="col-span-4 w-full h-full"></div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">10</div>
+    </div>
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+    <!--Nummer 11-->
+    <div class="col-span-4 w-full h-full ">
+        <div class="w-full h-full bg-indigo-400 rounded-md p-2 md:pl-4">
+            <h1 class="text-white text-xl font-medium py-2">Titel</h1>
+            <p class="text-gray-100 sm:text-sm text-xs">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+        <div class="h-full w-1 bg-indigo-300"></div>
+        <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-white text-center">11</div>
+    </div>
+
+    <div class="col-span-4 w-full h-full"></div>
+</div>
+
+<footer class="w-full h-40 bg-indigo-400 p-2 flex">
+    <nav class="flex items-center space-x-4">
+        <ul class="list-none">
+            <li><a>Link 1</a></li>
+            <li><a>link 2</a></li>
+            <li><a>Link 3</a></li>
+        </ul>
+    </nav>
 </footer>
 
 </body>
