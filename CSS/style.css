@@ -13,7 +13,16 @@ header a {
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
     padding: 10px;
     border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+}
 
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 
 header a:hover {
@@ -42,39 +51,6 @@ nav ul li a {
 nav ul li:hover a {
     background-color: #4a5568;
     color: #ffffff;
-}
-
-.cs_picture {
-    float: left;
-    width: 150px;
-    height: auto;
-}
-
-
-.cs_text {
-    background-color: #818cf8;
-    margin-left: 8rem;
-    padding: 0.5rem;
-    width: 200px;
-}
-
-.ubs_picture {
-    float: right;
-    width: 150px;
-    height: auto;
-}
-
-
-.ubs_text {
-    background-color: #818cf8;
-    margin-right: 8rem;
-    padding: 0.5rem;
-    width: 200px;
-}
-
-.article-container {
-    width: auto;
-    height: auto;
 }
 
 .card-container{
@@ -207,6 +183,16 @@ html {
     line-height: 30px;
     font-weight: 300;
 }
+.timeline-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: white;
+}
+
 .timeline-content .date {
     font-size: 12px;
     font-weight: 300;
@@ -317,5 +303,95 @@ html {
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #4c51bf;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #4c51bf;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:     #4c51bf;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.home_button {
+    position: relative; /* Add this line */
+}
+
+.home_button img:hover + .drop-down {
+    transition: 0.5s;
+    background-color: yellow;
+    visibility: visible;
+    border: solid black;
+}
+
+.drop-down {
+    visibility: hidden;
+    position: absolute; /* Position it relative to the home_button */
+    top: 100%; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+}
+
+.drop-down li {
+    list-style: none;
 }
 
