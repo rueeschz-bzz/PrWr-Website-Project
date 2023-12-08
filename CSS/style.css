@@ -458,6 +458,13 @@ html {
 .tab-links.active-link::after{
     width: 50%;
 
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
 }
 .tab-contents ul li{
     list-style: none;
