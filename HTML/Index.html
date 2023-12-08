@@ -15,13 +15,19 @@
     <a class="m-10" href="#">
         <img src="/img/home.png" height="auto" width="100" alt="home-button">
     </a>
-    <nav class="flex items-center space-x-4">
-        <ul class="list-none">
-            <li><a>Kontakt</a></li>
-            <li><a>Credits</a></li>
-            <li><a>Was auch immer</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="../HTML/history.html">Geschichte</a>
+                <a href="../HTML/scandals.html">Scandale</a>
+                <a href="../HTML/About%20Us.html">Über uns</a>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="card-container">
@@ -63,70 +69,6 @@
     </div>
 </section>
 
-
-
-<div class="container">
-    <div class="timeline">
-        <ul>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 4</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 5</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 6</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 7</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-content">
-                    <h3 class="date">20th may, 2010</h3>
-                    <h1>Heading 8</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
 <footer class="w-full h-40 bg-indigo-400 p-2 flex">
     <nav class="flex items-center space-x-4">
         <ul class="list-none">
@@ -136,6 +78,7 @@
         </ul>
     </nav>
 </footer>
+
 
 </body>
 </html>
