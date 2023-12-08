@@ -455,8 +455,9 @@ html {
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
+}
 
 .slider-nav a {
     width: 0.5rem;
@@ -477,7 +478,8 @@ html {
 .tab-contents{
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
 
