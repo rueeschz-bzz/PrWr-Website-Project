@@ -1,119 +1,150 @@
 <!DOCTYPE html>
 <html lang='de'>
 <head>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/output.css">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../JAVASCRIPT/script.js"> </script>
-    <script src='https://kit.fontawesome.com/5734caa0fc.js' crossorigin='anonymous'></script>
-    <title>Credit Swiss</title>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='../CSS/output.css'>
+  <link rel='stylesheet' href='../CSS/style.css'>
+  <script src='../JAVASCRIPT/script.js'></script>
+  <script src='https://kit.fontawesome.com/5734caa0fc.js' crossorigin='anonymous'></script>
+  <title>Credit Swiss</title>
 </head>
-<body class="h-full w-full m-0 min-h-full" style='background-color: #111;'>
+<body class='h-full w-full m-0 min-h-full' style='background-color: #111;'>
 
-<header class="bg-indigo-400 p-2">
-    <a class="m-10" href="../HTML/Index.html">
-        <img src="/img/logo.png" height="auto" width="150" alt="home-button">
-    </a>
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">
-                <i class="fa-solid fa-bars fa-2xl"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="Index.html">Home</a>
-                <a href="../HTML/history.html">Geschichte</a>
-                <a href="../HTML/scandals.html">Scandale</a>
-                <a href="../HTML/About%20Us.html">Über uns</a>
-            </div>
-        </div>
+<header class='bg-indigo-400 p-2'>
+  <a class='m-10' href='../HTML/Index.html'>
+    <img src='/img/logo.png' height='auto' width='150' alt='home-button'>
+  </a>
+  <div class='navbar'>
+    <div class='dropdown'>
+      <button class='dropbtn'>
+        <i class='fa-solid fa-bars fa-2xl'></i>
+      </button>
+      <div class='dropdown-content'>
+        <a href='Index.html'>Home</a>
+        <a href='history.html'>Geschichte</a>
+        <a href='scandals.html'>Scandale</a>
+        <a href='About%20Us.html'>Über uns</a>
+      </div>
     </div>
+  </div>
 </header>
 
+<div class='dropdown2'>
+  <div class='dropdown-content2'>
+    <a href='Index.html'>Home</a>
+    <a href='history.html'>Geschichte</a>
+    <a href='scandals.html'>Scandale</a>
+    <a href='About%20Us.html'>Über uns</a>
+  </div>
+</div>
+
 <div class='title'>
-    <h1>ÜBER UNS</h1>
+  <h1>ÜBER UNS</h1>
 </div>
 
 
 <!----------about---------->
 <div id='about'>
-    <div class='about_container'>
-        <div class='row'>
-            <div class='about-col-1'>
-                <img src='https://interassist.ch/wp-content/uploads/2022/06/blank-profile-picture-973460_1280.png' alt='user' id="profile-picture">
-            </div>
-            <div class='about-col-2'>
-                <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure.
-                </p>
+  <div class='about_container'>
+    <div class='row'>
+      <div class='about-col-1'>
+        <img src='https://interassist.ch/wp-content/uploads/2022/06/blank-profile-picture-973460_1280.png' alt='user'
+             id='profile-picture'>
+      </div>
+      <div class='about-col-2'>
+        <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties
+          difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt
+          music. Mention entered an through company as. Up arrived no painful between. It declared is prospect an
+          insisted pleasure.
+        </p>
 
-                <div class='tab-titles'>
-                    <p class='tab-links active-link' onclick="opentab('ryan')">Ryan</p>
-                    <p class='tab-links' onclick="opentab('zeno')">Zeno</p>
-                    <p class='tab-links' onclick="opentab('sebastian')">Sebastian</p>
-                </div>
-                <div class='tab-contents active-tab' id='ryan'>
-                    <ul>
-                        <li><b><span>Content</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</li>
-                    </ul>
-                </div>
-                <div class='tab-contents' id='zeno'>
-                    <ul>
-                        <li><b><span>Documentation</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.t</li>
-                        <li><b><span>Deployment</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</li>
-                    </ul>
-                </div>
-                <div class='tab-contents' id='sebastian'>
-                    <ul>
-                        <li><b><span>Web Development</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</li>
-                    </ul>
-                </div>
-            </div>
+        <div class='tab-titles'>
+          <p class='tab-links active-link' onclick="opentab('ryan')">Ryan</p>
+          <p class='tab-links' onclick="opentab('zeno')">Zeno</p>
+          <p class='tab-links' onclick="opentab('sebastian')">Sebastian</p>
         </div>
+        <div class='tab-contents active-tab' id='ryan'>
+          <ul>
+            <li><b><span>Content</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+              quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+              imperdiet a, venenatis vitae, justo.
+            </li>
+          </ul>
+        </div>
+        <div class='tab-contents' id='zeno'>
+          <ul>
+            <li><b><span>Documentation</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim.t
+            </li>
+            <li><b><span>Deployment</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim.
+            </li>
+          </ul>
+        </div>
+        <div class='tab-contents' id='sebastian'>
+          <ul>
+            <li><b><span>Web Development</span></b><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+              consequat massa quis enim.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div id='languages'>
-    <div class='about_container'>
-        <h1 class='sub-title'>Our languages</h1>
-        <div class='language-list'>
-            <div>
-                <a href="https://www.w3schools.com/html/">
-                    <i class="fa-brands fa-html5"></i>
-                </a>
-                <h2>HTML</h2>
-                <p>Acceptance middletons me if discretion boisterous travelling an.
-                    She prosperous continuing entreaties companions unreserved.</p>
-            </div>
-            <div>
-                <a href="https://www.w3schools.com/css/">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </a>
-                <h2>CSS</h2>
-                <p>Acceptance middletons me if discretion boisterous travelling an.
-                    She prosperous continuing entreaties companions unreserved.</p>
-            </div>
-            <div>
-                <a href="https://www.w3schools.com/js/">
-                    <i class="fa-brands fa-js"></i>
-                </a>
-                <h2>JavaScript</h2>
-                <p>Acceptance middletons me if discretion boisterous travelling an.
-                    She prosperous continuing entreaties companions unreserved.</p>
-            </div>
-        </div>
+  <div class='about_container'>
+    <div class='title'>
+      <h1>Our languages</h1>
     </div>
+    <div class='language-list'>
+      <div>
+        <a href='https://www.w3schools.com/html/'>
+          <i class='fa-brands fa-html5'></i>
+        </a>
+        <h2>HTML</h2>
+        <p>Acceptance middletons me if discretion boisterous travelling an.
+          She prosperous continuing entreaties companions unreserved.</p>
+      </div>
+      <div>
+        <a href='https://www.w3schools.com/css/'>
+          <i class='fa-brands fa-css3-alt'></i>
+        </a>
+        <h2>CSS</h2>
+        <p>Acceptance middletons me if discretion boisterous travelling an.
+          She prosperous continuing entreaties companions unreserved.</p>
+      </div>
+      <div>
+        <a href='https://www.w3schools.com/js/'>
+          <i class='fa-brands fa-js'></i>
+        </a>
+        <h2>JavaScript</h2>
+        <p>Acceptance middletons me if discretion boisterous travelling an.
+          She prosperous continuing entreaties companions unreserved.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer class="w-full h-40 bg-indigo-400 p-2 flex">
-    <nav class="flex items-center space-x-4">
-        <ul class="list-none">
-            <li><a>Link 1</a></li>
-            <li><a>link 2</a></li>
-            <li><a>Link 3</a></li>
-        </ul>
-    </nav>
+<footer class='w-full h-40 bg-indigo-400 p-2 flex'>
+  <nav class='flex items-center space-x-4'>
+    <ul class='list-none'>
+      <li><a>Link 1</a></li>
+      <li><a>link 2</a></li>
+      <li><a>Link 3</a></li>
+    </ul>
+  </nav>
 </footer>
-
 
 
 </body>

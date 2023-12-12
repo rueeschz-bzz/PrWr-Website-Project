@@ -15,6 +15,9 @@ function opentab(tabname){
 addEventListener("resize", () => {
     let x = document.getElementsByClassName("about-col-1")[0]
     let y = document.getElementsByClassName("slider-wrapper")[0]
+    if (window.innerWidth > 768) {
+        document.getElementsByClassName('dropdown-content2')[0].style.display = "none"
+    }
     if (window.innerWidth < 1266) {
         x.style.display = "none";
         y.style.display = "none";
@@ -24,3 +27,16 @@ addEventListener("resize", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    let z = document.getElementsByClassName('dropdown-content2')[0]
+    let dropdown = document.getElementsByClassName('dropdown')[0]
+    z.style.display = 'none'
+    document.addEventListener('click', function (event) {
+        let isClickInside = dropdown.contains(event.target);
+        if (isClickInside && z.style.display === 'none' && window.innerWidth <= 768) {
+            z.style.display = 'block'
+        } else if (!isClickInside) {
+            z.style.display = 'none'
+        }
+    });
+})
