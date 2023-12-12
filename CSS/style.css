@@ -7,7 +7,17 @@ header {
     padding: 10px;
     width: 100%;
     z-index: 2;
+    margin-bottom: 100px;
 }
+
+.title {
+    color: white;
+    font-size: xxx-large;
+    padding: 25px;
+    background-color: #111;
+    text-align: center;
+}
+
 
 header a {
     transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
@@ -17,7 +27,7 @@ header a {
 }
 
 header a:hover {
-    background-color: #4a5568;
+    background-color: #d3cdcd;
 }
 
 nav ul {
@@ -49,8 +59,8 @@ nav ul li:hover a {
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
     font-family: Arial, serif;
+    margin-right: 100px;
 }
 
 /* Links inside the navbar */
@@ -71,7 +81,6 @@ nav ul li:hover a {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -79,11 +88,13 @@ nav ul li:hover a {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    font-size: 2em;
 }
+
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #333;
 }
 
 /* Dropdown content (hidden by default) */
@@ -94,6 +105,8 @@ nav ul li:hover a {
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+    left: 100%;
+    margin-left: -195px;
 }
 
 /* Links inside the dropdown */
@@ -116,39 +129,6 @@ nav ul li:hover a {
     display: block;
 }
 
-
-.cs_picture {
-    float: left;
-    width: 150px;
-    height: auto;
-}
-
-
-.cs_text {
-    background-color: #818cf8;
-    margin-left: 8rem;
-    padding: 0.5rem;
-    width: 200px;
-}
-
-.ubs_picture {
-    float: right;
-    width: 150px;
-    height: auto;
-}
-
-
-.ubs_text {
-    background-color: #818cf8;
-    margin-right: 8rem;
-    padding: 0.5rem;
-    width: 200px;
-}
-
-.article-container {
-    width: auto;
-    height: auto;
-}
 
 .card-container{
     display: flex;
@@ -196,13 +176,6 @@ nav ul li:hover a {
     color: white;
 }
 
-
-footer {
-    background-color: #4c51bf;
-    padding: 10px;
-    width: 100%;
-}
-
 footer {
     background-color: #4c51bf;
     padding: 10px;
@@ -216,8 +189,8 @@ footer a {
     border-radius: 8px;
 }
 
-footer a:hover {
-    background-color: #4a5568;
+footer ul li a:hover {
+    background-color: #d3cdcd;
 }
 
 footer ul {
@@ -406,7 +379,6 @@ html {
 /----------about----------/
 
 #about{
-    padding: 80px 0;
     color: #ababab;
 }
 .row{
@@ -428,11 +400,6 @@ html {
     color: #b2a5a5;
 }
 
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #4c51bf;
-}
 
 .tab-titles{
     display: flex;
@@ -481,5 +448,115 @@ html {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+#scandal{
+    padding: 50px 0;
+}
+.scandal-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.scandals{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.scandals img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.scandals:hover img{
+    transform: scale(1.1);
+}
+
+.scandals:hover .layer{
+    height: 100%;
+    color: white;
+}
+
+.scandal_container{
+    padding: 10px 10%;
+}
+
+#languages{
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.language-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.language-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.language-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.language-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.language-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.language-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+.about_container {
+    padding: 20px 10%;
 }
 
