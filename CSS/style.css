@@ -484,7 +484,7 @@ html {
     content: '';
     width: 0;
     height: 3px;
-    background: #4c51bf;
+    background: #081623;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -507,7 +507,7 @@ html {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:     #4c51bf;
+    color:     #081623;
     font-size: 14px;
 }
 .tab-contents{
