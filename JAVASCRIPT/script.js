@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
             z.style.display = 'block'
         } else if (!isClickInside) {
             z.style.display = 'none'
+        } else if (isClickInside && z.style.display === 'block') {
+            z.style.display = 'none'
         }
     });
 })
