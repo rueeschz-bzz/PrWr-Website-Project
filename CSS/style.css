@@ -21,19 +21,6 @@ header {
 }
 
 
-/* Hover transition für Logo */
-header a {
-    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
-    padding: 10px;
-    border-radius: 8px;
-
-}
-
-header a:hover {
-    background-color: #d3cdcd;
-}
-
-
 /----------Navigation----------/
 * {
     margin: 0;
@@ -45,14 +32,12 @@ html {
     font-family: "Montserrat", serif;
 }
 
-/* Navbar container */
 .navbar {
     overflow: hidden;
     font-family: Arial, serif;
     margin-right: 100px;
 }
 
-/* Links inside the navbar */
 .navbar a {
     float: left;
     font-size: 16px;
@@ -62,31 +47,29 @@ html {
     text-decoration: none;
 }
 
-/* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
 }
 
-/* Dropdown button */
 .dropdown .dropbtn {
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: inherit;
+    margin: 0;
     font-size: 2em;
 }
 
 
-/* Add a red background color to navbar links on hover */
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #333;
 }
 
-/* Dropdown content (hidden by default) */
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -99,7 +82,7 @@ html {
 }
 
 
-/* Links inside the dropdown */
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -109,12 +92,12 @@ html {
     text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -150,7 +133,7 @@ html {
         margin-right: 100px;
     }
 
-    /* Links inside the navbar */
+
     .navbar2 a {
         float: none;
         font-size: 16px;
@@ -160,7 +143,7 @@ html {
         text-decoration: none;
     }
 
-    /* The dropdown container */
+
     .dropdown2 {
         width: 100%;
         float: left;
@@ -168,12 +151,12 @@ html {
     }
 
 
-    /* Add a red background color to navbar links on hover */
+
     .navbar2 a:hover, .dropdown2:hover .dropdown .dropbtn {
         background-color: #333;
     }
 
-    /* Dropdown content (hidden by default) */
+
     .dropdown-content2 {
         display: none;
         position: relative;
@@ -182,7 +165,7 @@ html {
         z-index: 1;
     }
 
-    /* Links inside the dropdown */
+
     .dropdown-content2 a {
         float: none;
         color: black;
@@ -192,7 +175,7 @@ html {
         text-align: left;
     }
 
-    /* Add a grey background color to dropdown links on hover */
+
     .dropdown-content2 a:hover {
         background-color: #ddd;
     }
@@ -286,8 +269,8 @@ html {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
-    -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
-    scrollbar-width: none; /* Hide scrollbar Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -646,6 +629,7 @@ html {
 .footer_container{
     max-width: 1170px;
     margin:auto;
+    bottom: 0;
 }
 .row{
     display: flex;
@@ -726,3 +710,67 @@ ul{
     }
 }
 
+/----------Impressum----------/
+*{
+    margin: 0;
+    margin-bottom: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", serif;
+}
+
+.impressum_container {
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impressum {
+    color: white;
+    background-color: black;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.impressum h2,
+.impressum p {
+    margin: 0;
+}
+
+/----------Disclaimer----------/
+
+#disclaimer {
+    background-color: white;
+}
+
+.disclaimer_container {
+    color: black;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto 150px;
+}
+
+/----------Datenschutz----------/
+
+#datenschutz {
+    background-color: white;
+}
+
+.datenschutz_container {
+    color: black;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto 150px;
+}
+
+.datenschutz_container li {
+    list-style-type: disc;
+}
