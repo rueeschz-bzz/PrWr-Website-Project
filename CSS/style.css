@@ -557,7 +557,7 @@ html {
 }
 
 
-/----------Skandale----------/
+/----------Gründe----------/
 
 #scandal{
     padding: 50px 0;
@@ -624,6 +624,35 @@ html {
 
 .scandal_container{
     padding: 10px 10%;
+}
+
+.gründe_intro {
+    color: white;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gründe_intro p {
+    max-width: 65%;
+    font-weight: bold;
+}
+
+.scandal_container .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.scandal_container .btn:hover{
+    background: #ff004f;
 }
 
 
