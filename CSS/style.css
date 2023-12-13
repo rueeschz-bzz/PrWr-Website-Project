@@ -14,16 +14,19 @@ header {
 
 
 .intro {
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
     font-weight: bold;
+    color: white;
 }
 
 .intro p {
     max-width: 65%;
+    margin-top: 20px;
+    color: white;
 }
 
 
