@@ -477,17 +477,20 @@ html {
     display: block;
     width: 100%;
     border-radius: 15px;
+
 }
 
 .about-col-2{
     flex-basis: 60%;
     max-width: 1000px;
     color: #b2a5a5;
+    font-size: 18px;
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+
 }
 .tab-links{
     margin-right: 50px;
