@@ -1,7 +1,7 @@
-let tablinks = document.getElementsByClassName('tab-links');
-let tabcontents = document.getElementsByClassName('tab-contents');
 
 function opentab(tabname){
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabcontents = document.getElementsByClassName('tab-contents');
     for(tablink of tablinks){
         tablink.classList.remove('active-link');
     }
@@ -56,3 +56,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 })
+
+window.addEventListener("load", () => {
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabcontents = document.getElementsByClassName('tab-contents');
+
+    if (window.location.href.includes("about_us.html#")) {
+        const persons = ["ryan", "zeno", "sebastian"];
+        for (let i = 0; i < persons.length; i++) {
+            if (window.location.href.includes(persons[i])) {
+                if (persons[i] !== "ryan") {
+                    Array.from(tabcontents).forEach((tabcontent) => {
+                        tabcontent.classList.remove('active-tab');
+                    });
+                    document.getElementById("start_tab_link").classList.remove('active-link');
+                    document.getElementById(persons[i]).classList.add('active-tab');
+                    tablinks[i].classList.add('active-link')
+                    console.log(tablinks.length)
+                    console.log(persons[i]);
+                }
+                break;
+            }
+        }
+    }
+});
