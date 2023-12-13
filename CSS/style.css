@@ -725,6 +725,7 @@ ul{
     background-color: #ffffff;
 }
 
+
 /*responsive*/
 @media(max-width: 767px){
     .footer-col{
@@ -829,6 +830,7 @@ h1 {
     background-color: #fff;
     color: #111;
     margin: 1rem 0;
+    padding: 20px;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
@@ -850,6 +852,10 @@ h1 {
 }
 .accordion-item-header.active::after {
     content: "\2212";
+}
+
+.accordion-item {
+    margin-bottom: 2rem;
 }
 .accordion-item-body {
     max-height: 0;
