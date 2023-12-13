@@ -609,18 +609,7 @@ html {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
-    margin-top: 20px;
-    color: #003662;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
+
 .scandals:hover img{
     transform: scale(1.1);
 }
