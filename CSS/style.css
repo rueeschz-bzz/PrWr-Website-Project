@@ -261,7 +261,7 @@ html {
 .card-content .btn {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #333;
+    background-color: #003662;
     text-decoration: none;
     border-radius: 4px;
     margin-top: 16px;
@@ -454,7 +454,7 @@ html {
         top: -30px;
     }
     .timeline ul li:hover::before {
-        background-color: white;
+        background-color: #003662;
     }
 }
 
@@ -688,7 +688,7 @@ ul{
 }
 .footer-col{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 .footer-col h4{
     font-size: 18px;
@@ -733,12 +733,12 @@ ul{
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: white;
     transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
     color: #24262b;
-    background-color: #ffffff;
+    background-color: black;
 }
 
 
@@ -778,7 +778,7 @@ html {
 
 .impressum {
     color: white;
-    background-color: black;
+    background-color: #111;
     max-width: 960px;
     padding: 20px;
     margin: 0 auto;
@@ -797,7 +797,7 @@ html {
 }
 
 .disclaimer_container {
-    color: black;
+    color: white;
     max-width: 960px;
     padding: 20px;
     margin: 0 auto 150px;
@@ -810,7 +810,7 @@ html {
 }
 
 .datenschutz_container {
-    color: black;
+    color: white;
     max-width: 960px;
     padding: 20px;
     margin: 0 auto 150px;
