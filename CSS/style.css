@@ -12,6 +12,21 @@ header {
     margin-bottom: -180px;
 }
 
+
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.intro p {
+    max-width: 65%;
+}
+
+
 .title {
     color: white;
     font-size: xxx-large;
@@ -201,7 +216,7 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 25px;
 }
 
 .card {
@@ -233,6 +248,7 @@ html {
     font-size: 28px;
     margin-bottom: 8px;
     color: #666;
+
 }
 
 .card-content p {
