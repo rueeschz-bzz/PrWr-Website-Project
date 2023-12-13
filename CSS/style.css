@@ -777,6 +777,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 300px;
 }
 
 .impressum {
@@ -792,6 +793,44 @@ html {
 .impressum p {
     margin: 0;
 }
+
+/----------Quellen----------/
+
+*{
+    margin: 0;
+    margin-bottom: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", serif;
+}
+
+.quellen_container {
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+.quellen {
+    color: white;
+    background-color: #111;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.quellen h2,
+.quellen p {
+    margin: 0;
+}
+
 
 /----------Disclaimer----------/
 
