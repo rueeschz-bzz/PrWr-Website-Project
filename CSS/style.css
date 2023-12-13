@@ -9,7 +9,7 @@ header {
     padding: 10px;
     width: 100%;
     z-index: 2;
-    margin-bottom: 100px;
+    margin-bottom: -180px;
 }
 
 .title {
@@ -438,7 +438,7 @@ html {
         top: -30px;
     }
     .timeline ul li:hover::before {
-        background-color: aqua;
+        background-color: white;
     }
 }
 
@@ -484,7 +484,7 @@ html {
     content: '';
     width: 0;
     height: 3px;
-    background: #081623;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -507,7 +507,7 @@ html {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:     #081623;
+    color:     white;
     font-size: 14px;
 }
 .tab-contents{
@@ -556,7 +556,7 @@ html {
     display: inline-block;
 }
 .language-list div:hover{
-    background: #ff004f;
+    background: #003662;
     transform: translateY(-10px);
 }
 
@@ -590,7 +590,7 @@ html {
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #003662);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -611,7 +611,7 @@ html {
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #003662;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -651,7 +651,7 @@ html {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #003662;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -660,7 +660,7 @@ html {
 }
 
 .scandal_container .btn:hover{
-    background: #ff004f;
+    background: #003662;
 }
 
 
@@ -698,7 +698,7 @@ ul{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: white;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
