@@ -21,12 +21,17 @@ header {
     font-size: 15px;
     font-weight: bold;
     color: white;
+
 }
 
 .intro p {
     max-width: 65%;
     margin-top: 20px;
     color: white;
+}
+
+.intro h1 {
+    max-width: 61%;
 }
 
 
@@ -135,7 +140,6 @@ html {
         box-sizing: border-box;
     }
 
-
     html {
         font-family: "Montserrat", serif;
     }
@@ -144,15 +148,14 @@ html {
         margin-bottom: 0;
     }
 
-    .navbar2 {
+    .navbar {
         width: 100%;
         overflow: hidden;
         font-family: Arial, serif;
-        margin-right: 100px;
+        margin-right: 25px;
     }
 
-
-    .navbar2 a {
+    .navbar a {
         float: none;
         font-size: 16px;
         color: white;
@@ -161,21 +164,20 @@ html {
         text-decoration: none;
     }
 
-
-    .dropdown2 {
+    .dropdown {
         width: 100%;
-        float: left;
         overflow: hidden;
     }
 
+    .dropdown .dropbtn {
+        float: right;
+    }
 
-
-    .navbar2 a:hover, .dropdown2:hover .dropdown .dropbtn {
+    .navbar a:hover, .dropdown:hover .dropbtn {
         background-color: #333;
     }
 
-
-    .dropdown-content2 {
+    .dropdown-content {
         display: none;
         position: relative;
         background-color: #f9f9f9;
@@ -183,6 +185,30 @@ html {
         z-index: 1;
     }
 
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-content2 {
+        display: none;
+        position: relative;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
 
     .dropdown-content2 a {
         float: none;
@@ -193,13 +219,12 @@ html {
         text-align: left;
     }
 
-
     .dropdown-content2 a:hover {
         background-color: #ddd;
     }
 
-    .dropdown:hover .dropdown-content {
-        display: none;
+    .dropdown2:hover .dropdown-content2 {
+        display: block;
     }
 }
 
@@ -237,6 +262,7 @@ html {
 .card img {
     width: 100%;
     height: auto;
+    background-color: white;
 }
 
 .card-content {
